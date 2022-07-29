@@ -1,0 +1,158 @@
+
+
+.container {
+    display: grid;
+    grid-template-rows: [row1-start] 10rem [row1-end row2-start] 60rem [row2-end row3-start] 60rem [row3-end row4-start] 20rem [row3-end row4-start];
+    grid-gap: 1rem;
+    background: linear-gradient(
+        to top,
+        $color-beige 0%,
+        $color-beige 30%,
+        $color-white 30%,
+        $color-white 100%       
+      );
+}
+
+.header {
+    grid-row: 1 / 2;
+    margin: 0rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-family: $ff-main;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: bold;
+    color: $color-main;
+}
+
+// TOP BOX //
+
+.advert_one {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0rem 15rem;
+}
+
+.ad1-left-container {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    grid-template-rows: 15fr 60fr 25fr;
+    grid-template-columns: 1;
+}
+
+.svg-curve {
+    grid-row: 1 / 2;
+    z-index: 100;
+}
+
+.svg-image {
+    height: 3rem;
+    width: 30rem;
+    margin: 5rem 0 0 31rem;
+   
+}
+
+.ad1-text-container {
+    grid-row: 2 / 3;
+    grid-column: 1;
+    z-index: 100;
+}
+
+.ad1-text {
+
+    &__large {
+    font-family: $ff-main;
+    font-size: $fs-heading-xl;
+    color: $color-main;
+    letter-spacing: 1px;
+    line-height: 7.8rem;
+    font-weight: 500;
+    }
+    &__paragraph {
+        font-family: $ff-main;
+        font-size: $fs-body;
+        color: $color-grey;
+        letter-spacing: 1px;
+        line-height: 3.2rem;
+        font-weight: 400;
+        margin: 4rem 45% 0 0;
+    }
+}
+
+.make-bolder {
+    font-weight: 700;
+}
+
+.ad1-button-container {
+    grid-row: 3 / 4;
+}
+
+
+.ad1-image-container {
+    grid-column: 4 / 8;
+    grid-row: 1;
+}
+
+.ad1-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 0 0 7rem;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.stat-container {
+    grid-column: 8 / 19;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.stat_box {
+    display: flex;
+    flex-direction: column;   
+}
+
+.stat_number {
+  font-family: $ff-main;
+  font-size: $fs-heading-xl;
+  font-weight: 700;
+  color: $color-main;
+
+  @media only screen and (max-width: $bp-mobile) {
+    text-align: center;
+  }
+}
+
+.stat_paragraph {
+  font-family: $ff-main;
+  font-size: $fs-heading-s;
+  color: $color-grey;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  @media only screen and (max-width: $bp-mobile) {
+    text-align: center;
+  }
+}
+
+// BOTTOM BOX //
+
+.advert_two {
+    display: grid;
+    grid-row: 3 / 4;
+    margin: 0rem 10rem;
+}
+
+.footer {
+    display: grid;
+    grid-row: 4 / 5;
+    margin: 0rem 10rem;
+
+}

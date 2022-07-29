@@ -1,0 +1,203 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* This sets the root font size so 1rem = 10px . The % will be that of the root value of 16px*/
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+span {
+  white-space: pre;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: [row1-start] 10rem [row1-end row2-start] 60rem [row2-end row3-start] 60rem [row3-end row4-start] 20rem [row3-end row4-start];
+  grid-gap: 1rem;
+  background: linear-gradient(to top, rgb(243, 237, 231) 0%, rgb(243, 237, 231) 30%, rgb(250, 248, 246) 30%, rgb(250, 248, 246) 100%);
+}
+
+.header {
+  grid-row: 1/2;
+  margin: 0rem 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: "Epilogue", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: bold;
+  color: rgb(23, 35, 57);
+}
+
+.advert_one {
+  display: grid;
+  grid-row: 2/3;
+  grid-template-columns: repeat(10, 1fr);
+  margin: 0rem 15rem;
+}
+
+.ad1-left-container {
+  display: grid;
+  grid-column: 1/6;
+  grid-row: 1;
+  grid-template-rows: 15fr 60fr 25fr;
+  grid-template-columns: 1;
+}
+
+.svg-curve {
+  grid-row: 1/2;
+  z-index: 100;
+}
+
+.svg-image {
+  height: 3rem;
+  width: 30rem;
+  margin: 5rem 0 0 31rem;
+}
+
+.ad1-text-container {
+  grid-row: 2/3;
+  grid-column: 1;
+  z-index: 100;
+}
+
+.ad1-text__large {
+  font-family: "Epilogue", sans-serif;
+  font-size: 7.2rem;
+  color: rgb(23, 35, 57);
+  letter-spacing: 1px;
+  line-height: 7.8rem;
+  font-weight: 500;
+}
+.ad1-text__paragraph {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.8rem;
+  color: rgb(73, 86, 109);
+  letter-spacing: 1px;
+  line-height: 3.2rem;
+  font-weight: 400;
+  margin: 4rem 45% 0 0;
+}
+
+.make-bolder {
+  font-weight: 700;
+}
+
+.ad1-button-container {
+  grid-row: 3/4;
+}
+
+.ad1-image-container {
+  grid-column: 4/8;
+  grid-row: 1;
+}
+
+.ad1-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 0 0 7rem;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.stat-container {
+  grid-column: 8/19;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.stat_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat_number {
+  font-family: "Epilogue", sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: rgb(23, 35, 57);
+}
+@media only screen and (max-width: 50rem) {
+  .stat_number {
+    text-align: center;
+  }
+}
+
+.stat_paragraph {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+  color: rgb(73, 86, 109);
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+@media only screen and (max-width: 50rem) {
+  .stat_paragraph {
+    text-align: center;
+  }
+}
+
+.advert_two {
+  display: grid;
+  grid-row: 3/4;
+  margin: 0rem 10rem;
+}
+
+.footer {
+  display: grid;
+  grid-row: 4/5;
+  margin: 0rem 10rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Epilogue", sans-serif;
+  background: rgb(23, 35, 57);
+  transition: all 0.2;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn__primary {
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(250, 248, 246);
+  background: rgb(23, 35, 57);
+  border-style: none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.btn__primary:hover {
+  background: linear-gradient(to top left, rgb(255, 168, 78) 0%, rgb(203, 48, 227) 50%, rgb(160, 96, 255) 100%);
+}
+.btn__secondary {
+  width: 19rem;
+  height: 4.5rem;
+  border: 1px solid rgb(23, 35, 57);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(73, 86, 109);
+  background: rgb(250, 248, 246);
+  text-align: center;
+}
+.btn__secondary:hover {
+  background: rgb(23, 35, 57);
+  color: rgb(250, 248, 246);
+}/*# sourceMappingURL=main.css.map */

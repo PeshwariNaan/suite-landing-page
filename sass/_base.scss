@@ -1,15 +1,31 @@
 // COLORS MAIN
-
-
+$color-main: rgb(23, 35, 57);
+$color-grey: rgb(73, 86, 109);
+$color-beige: rgb(243, 237, 231);
+$color-white: rgb(250, 248, 246);
+$color-1: rgb(160, 96, 255);
+$color-2: rgb(203, 48, 227);
+$color-3: rgb(255, 168, 78);
 
 //COLORS TEXT
 
-
-
 // FONTS
+$ff-main: 'Epilogue', sans-serif;
+
+//FONT SIZES
+$fs-heading-xl: 7.2rem;
+$fs-heading-l: 4.8rem;
+$fs-heading-m: 1.8rem;
+$fs-heading-s: 1.6rem;
+$fs-quote: 2rem;
+$fs-body: 1.8rem;
+$fs-footer: 1.5rem;
 
 
-//Break point for mobile
+//BREAK POINTS
+$bp-tablet: 81rem;
+$bp-mobile: 50rem;
+
 
 
 *,
@@ -25,9 +41,14 @@ html {
 }
 
 body {
-  box-sizing: border-box;
   
+  box-sizing: border-box;
+  height: 100vh;
+ 
+    
+
 }
 span {
-    white-space: pre;
+  white-space: pre;
 }
+
