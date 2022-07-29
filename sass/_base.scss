@@ -1,0 +1,33 @@
+// COLORS MAIN
+
+
+
+//COLORS TEXT
+
+
+
+// FONTS
+
+
+//Break point for mobile
+
+
+*,
+*::after,  /*  Use this so the pseudo elements don't get this behavior - good practice*/
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* This sets the root font size so 1rem = 10px . The % will be that of the root value of 16px*/
+}
+
+body {
+  box-sizing: border-box;
+  
+}
+span {
+    white-space: pre;
+}
