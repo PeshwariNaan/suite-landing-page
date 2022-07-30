@@ -309,6 +309,7 @@
 
 .solid-backround-container {
   display: grid;
+  position: relative;
   grid-column: 1 / 4;
   grid-row: 1;
   height: 90%;
@@ -316,6 +317,7 @@
   width: 100%;
   border-radius: 2rem;
   align-self: flex-end;
+  overflow: hidden;
   @media (max-width: $bp-large) {
     grid-row: 1 / 4;
     grid-column: 1;
@@ -340,8 +342,9 @@
   max-width: 100%;
   max-height: 100%;
   margin: 0 0 0 7rem;
+  position: relative;
   object-fit: contain;
-  overflow: hidden;
+  z-index: 300;
   @media (max-width: $bp-large) {
     grid-row: 1 / 4;
     grid-column: 1;
@@ -377,10 +380,24 @@
   }
 }
 
+  .svg2-image-blur {
+    height: 40rem;
+    width: 40rem;
+    position: absolute;
+    overflow: hidden;
+    @media (max-width: $bp-large) {
+        height: 30rem;
+        width: 30rem;
+        
+      }
+   
+  }
+
 .ad2-text-container {
   grid-column: 3 / 4;
   grid-row: 1;
   padding: 13rem 0 0 0;
+  z-index: 300;
   @media (max-width: $bp-large) {
     grid-row: 3 / 4;
     grid-column: 1;
