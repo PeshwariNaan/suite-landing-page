@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/PeshwariNaan/suite-landing-page
+- Solution URL: [Github Repo](https://github.com/PeshwariNaan/suite-landing-page)
 - Live Site URL: [Live Link](https://peshwarinaan.github.io/suite-landing-page/)
 
 ## My process
