@@ -1,8 +1,8 @@
 .btn {
   display: inline-block;
   font-family: $ff-main;
-  background: $color-main; 
-  
+  background: $color-main;
+
   transition: all 0.2;
   font-size: 2rem;
   border: none;
@@ -16,31 +16,40 @@
     color: $color-white;
     background: $color-main;
     border-style: none;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
     text-align: center;
-    
 
-    &:hover {
-        background: linear-gradient(to top left, $color-3 0%, $color-2 50%, $color-1 100%);
+    &:hover,
+    &:active {
+      background: linear-gradient(
+        to top left,
+        $color-3 0%,
+        $color-2 50%,
+        $color-1 100%
+      );
     }
   }
 
   &__secondary {
     width: 19rem;
     height: 4.5rem;
-    border: 1px solid $color-main;   
-    border-radius: 0.5rem; 
+    border: 1px solid $color-main;
+    border-radius: 0.5rem;
     font-size: $fs-footer;
     font-weight: 600;
     color: $color-grey;
     background: $color-white;
     text-align: center;
 
-    &:hover {
+    &:hover,
+    &:active {
       background: $color-main;
       color: $color-white;
     }
+
+    @media (max-width: $bp-mobile) {
+      width: 19rem;
+      height: 4rem;
+    }
   }
 }
-
-

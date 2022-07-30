@@ -23,10 +23,11 @@ $fs-footer: 1.5rem;
 
 
 //BREAK POINTS
-$bp-tablet: 81rem;
-$bp-mobile: 50rem;
+$bp-large: 1080px;
+$bp-tablet: 810px;
+$bp-mobile: 600px;
 
-
+$dt-horizontal-margin: 70vw;
 
 *,
 *::after,  /*  Use this so the pseudo elements don't get this behavior - good practice*/
