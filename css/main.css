@@ -42,7 +42,7 @@ span {
 .header {
   grid-row: 1/2;
   margin: auto;
-  width: 70vw;
+  width: 75vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +73,7 @@ span {
   display: grid;
   grid-row: 2/3;
   max-height: 70rem;
-  width: 70vw;
+  width: 75vw;
   padding: 5rem 0 0 0;
   margin: 0 auto 5rem auto;
   grid-template-columns: repeat(10, 1fr);
@@ -352,7 +352,7 @@ span {
 .advert_two {
   display: grid;
   grid-row: 3/4;
-  width: 70vw;
+  width: 75vw;
   padding: 0 0 0 0;
   margin: 0 auto;
   max-height: 60rem;
@@ -455,27 +455,17 @@ span {
   }
 }
 
-.svg2-blur-container {
-  grid-column: 1/2;
-  grid-row: 1;
-  z-index: 200;
-}
-@media (max-width: 1080px) {
-  .svg2-blur-container {
-    grid-row: 1/2;
-    grid-column: 1;
-  }
-}
-
 .svg2-image-blur {
-  height: 45rem;
-  width: 45rem;
+  padding: 10rem 10rem 0 0;
+  height: 60rem;
+  width: 60rem;
   position: absolute;
 }
 @media (max-width: 1080px) {
   .svg2-image-blur {
     height: 30rem;
     width: 30rem;
+    padding: 0 0 0 0;
   }
 }
 
@@ -517,13 +507,13 @@ span {
   color: rgb(243, 237, 231);
   letter-spacing: 1px;
   line-height: 3.5rem;
-  font-weight: 400;
-  padding: 3rem 20% 0 0;
+  font-weight: 300;
+  padding: 3rem 18% 0 0;
 }
 @media only screen and (max-width: 1300px) {
   .ad2-text__quote {
     font-size: 1.6rem;
-    padding: 2rem 20% 0 0;
+    padding: 2rem 15% 0 0;
   }
 }
 @media (max-width: 1080px) {
@@ -534,9 +524,9 @@ span {
 }
 .ad2-text__name {
   font-family: "Epilogue", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(250, 248, 246);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 5rem 0 0 0;
 }
@@ -549,7 +539,7 @@ span {
   font-family: "Epilogue", sans-serif;
   font-size: 1.8rem;
   color: rgb(243, 237, 231);
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   padding: 1rem 0 0 0;
 }
@@ -563,7 +553,7 @@ span {
   display: grid;
   grid-row: 4/5;
   margin: auto;
-  width: 70vw;
+  width: 75vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
