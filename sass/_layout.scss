@@ -2,12 +2,12 @@
 
 .container {
   display: grid;
-  grid-template-rows: [row1-start] 10rem [row1-end row2-start] 70rem [row2-end row3-start] 62rem [row3-end row4-start] 20rem [row3-end row4-start];
+  grid-template-rows: [row1-start] 10rem [row1-end row2-start] 80rem [row2-end row3-start] 62rem [row3-end row4-start] 20rem [row3-end row4-start];
   background: linear-gradient(
     to top,
     $color-beige 0%,
-    $color-beige 25%,
-    $color-white 25%,
+    $color-beige 30%,
+    $color-white 30%,
     $color-white 100%
   );
   background-size: 100vh;
@@ -15,6 +15,13 @@
 
   @media (max-width: $bp-large) {
     grid-template-rows: [row1-start] 10rem [row1-end row2-start] 80rem [row2-end row3-start] 85rem [row3-end row4-start] 30rem [row3-end row4-start];
+    background: linear-gradient(
+      to top,
+      $color-beige 0%,
+      $color-beige 40%,
+      $color-white 40%,
+      $color-white 100%
+    );
   }
 
   @media (max-width: $bp-mobile) {
@@ -60,6 +67,7 @@
   padding: 5rem 0 0 0;
   margin: 0 auto 5rem auto;
   grid-template-columns: repeat(10, 1fr);
+  overflow: hidden;
   @media (max-width: $bp-large) {
     max-height: 90rem;
     grid-template-rows: 80fr 20fr;
@@ -307,7 +315,7 @@
   margin: 0 auto;
   max-height: 60rem;
   grid-template-columns: 1fr minmax(10rem, 17rem) 1fr;
-
+  overflow: hidden;
   @media (max-width: $bp-large) {
     grid-template-rows: 35fr 15fr 50fr;
     grid-template-columns: unset;
@@ -342,7 +350,7 @@
   display: grid;
   grid-column: 1 / 2;
   grid-row: 1;
-
+  position: relative;
   align-items: flex-end;
   justify-content: center;
   @media (max-width: $bp-large) {
@@ -360,7 +368,7 @@
   margin: 0 0 0 7rem;
   object-fit: contain;
   z-index: 300;
-  position: relative;
+  position: absolute;
   @media (max-width: $bp-large) {
     grid-row: 1 / 4;
     grid-column: 1;
@@ -386,7 +394,7 @@
 }
 
 .svg2-image {
-  height: 7rem;
+  height: 6rem;
   width: 7rem;
 
   @media (max-width: $bp-large) {
@@ -412,8 +420,9 @@
 }
 
 .svg2-image-blur {
-  height: 40rem;
-  width: 40rem;
+  height: 45rem;
+  width: 45rem;
+  position: absolute;
   @media (max-width: $bp-large) {
     height: 30rem;
     width: 30rem;
@@ -503,7 +512,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-
+  overflow: hidden;
   @media (max-width: $bp-large) {
     margin: 0rem 5rem;
     width: auto;

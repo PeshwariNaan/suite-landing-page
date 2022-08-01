@@ -21,7 +21,6 @@ $fs-quote: 2rem;
 $fs-body: 1.8rem;
 $fs-footer: 1.5rem;
 
-
 //BREAK POINTS
 $bp-large: 1080px;
 $bp-tablet: 810px;
@@ -39,18 +38,19 @@ $dt-horizontal-margin: 70vw;
 
 html {
   font-size: 62.5%; /* This sets the root font size so 1rem = 10px . The % will be that of the root value of 16px*/
-  height: 100%;
+  //height: 100%;
 }
 
 body {
-
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  min-height: 100%;
- 
-    
-
+  // min-height: 100vh;
 }
 span {
   white-space: pre;
 }
 
+main {
+  //height: 100%;
+}
