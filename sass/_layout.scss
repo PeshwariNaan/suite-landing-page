@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: [row1-start] 10rem [row1-end row2-start] 70rem [row2-end row3-start] 62rem [row3-end row4-start] 10rem [row3-end row4-start];
+  grid-template-rows: [row1-start] 10rem [row1-end row2-start] 70rem [row2-end row3-start] 62rem [row3-end row4-start] 20rem [row3-end row4-start];
   background: linear-gradient(
     to top,
     $color-beige 0%,
@@ -10,10 +10,11 @@
     $color-white 25%,
     $color-white 100%
   );
-  background-size: 100%;
+  background-size: 100vh;
+  overflow: hidden;
 
   @media (max-width: $bp-large) {
-    grid-template-rows: [row1-start] 10rem [row1-end row2-start] 80rem [row2-end row3-start] 85rem [row3-end row4-start] 20rem [row3-end row4-start];
+    grid-template-rows: [row1-start] 10rem [row1-end row2-start] 80rem [row2-end row3-start] 85rem [row3-end row4-start] 30rem [row3-end row4-start];
   }
 
   @media (max-width: $bp-mobile) {
@@ -501,13 +502,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 
   @media (max-width: $bp-large) {
     margin: 0rem 5rem;
     width: auto;
   }
   @media (max-width: $bp-mobile) {
-    margin: 4rem 5rem;
+    margin: 0 5rem;
 
     width: auto;
     flex-direction: column;
