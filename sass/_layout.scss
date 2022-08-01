@@ -389,7 +389,7 @@
     grid-column: 1;
     padding: 3rem 0;
     justify-items: center;
-    //margin: auto;
+  
   }
 }
 
@@ -450,7 +450,7 @@
     color: $color-beige;
     letter-spacing: 1px;
     line-height: 3.5rem;
-    font-weight: 300;
+    font-weight: 400;
     padding: 3rem 18% 0 0;
     @media only screen and (max-width: 1300px) {
       font-size: $fs-heading-s;
@@ -478,7 +478,7 @@
     font-family: $ff-main;
     font-size: $fs-body;
     color: $color-beige;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 1rem 0 0 0;
 
